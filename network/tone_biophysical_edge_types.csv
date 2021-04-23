@@ -1,4 +1,4 @@
-edge_type_id target_query source_query target_sections delay model_template distance_range dynamics_params syn_weight
-103 pop_name=='PyrA' * ['somatic'] 0.1 tone2pyr "[10.0, 11.0]" tone2PN.json 1.0
-104 pop_name=='PyrC' * ['somatic'] 0.1 tone2pyr "[10.0, 11.0]" tone2PN.json 1.0
-105 pop_name=='Int' * ['somatic'] 0.1 tone2pyr "[10.0, 11.0]" tone2INT.json 1.0
+edge_type_id target_query source_query model_template delay distance_range target_sections syn_weight dynamics_params
+103 pop_name=='PyrA' * tone2pyr 0.1 "[10.0, 11.0]" ['somatic'] 1.0 tone2PN.json
+104 pop_name=='PyrC' * tone2pyr 0.1 "[10.0, 11.0]" ['somatic'] 1.0 tone2PN.json
+105 pop_name=='Int' * tone2pyr 0.1 "[10.0, 11.0]" ['somatic'] 1.0 tone2INT.json
