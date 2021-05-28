@@ -131,6 +131,9 @@ fig, axs = plt.subplots(3,3, sharey=True, tight_layout=True)
 #4/23/21
 #Add titles, figure out orange bar (might be beccause of size of y)
 #plot outputs to see if its actually displaying data correctly
+#4/26/21
+#create list out of data and then plot THAT rather than using the dataframe search values
+#set_xlim(0,400) set x values
 axs[0,0].hist(dh.loc[(dh.node_ids==0)])
 
 axs[0,1].hist(dh.loc[(dh.node_ids==1)])
@@ -146,7 +149,7 @@ plt.show()
 fig, axs = plt.subplots(3,3, sharey=True, tight_layout=True)
 axs[0,0].hist(dh.loc[(dh.node_ids==0) & (dh.ts <= 400)])
 
-axs[0,1].hist(dh.loc[(dh.node_ids==1) & (dh.ts <= 400)])
+axs[0,1].hist(dh.loc[(dh.node_ids==1) & (dh.ts <= 400)],color="blue")
 axs[0,2].hist(dh.loc[(dh.node_ids==2) & (dh.ts <= 400)])
 axs[1,0].hist(dh.loc[(dh.node_ids==3) & (dh.ts <= 400)])
 axs[1,1].hist(dh.loc[(dh.node_ids==4) & (dh.ts <= 400)])
